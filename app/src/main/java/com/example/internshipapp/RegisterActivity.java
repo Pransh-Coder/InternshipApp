@@ -65,6 +65,10 @@ public class RegisterActivity extends AppCompatActivity {
                     password.setError("Password feild is empty!");
 
                 }
+                else if(password.getText().toString().length()<6)
+                {
+                    password.setError("Too short Length!!");
+                }
                 else {
                     Register(user_name,Email,passWord);
                 }
