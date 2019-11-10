@@ -30,10 +30,18 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottom"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:id="@+id/bottom"
         android:background="#fff"
         android:layout_alignParentBottom="true">
 
@@ -41,16 +49,18 @@
             android:id="@+id/text_send"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+            android:background="@android:color/black"
             android:layout_toLeftOf="@+id/send"
             android:layout_centerVertical="true"
-            android:text="Write "/>
+            android:textColor="@android:color/white"
+            android:hint="Write  your message!"/>
 
         <ImageButton
             android:id="@+id/send"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_send_black_24dp"/>
 
     </RelativeLayout>
 
